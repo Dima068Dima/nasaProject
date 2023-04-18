@@ -14,6 +14,7 @@
 		35D1733A29EE9DEB00350ECB /* NasaProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35D1733829EE9DEB00350ECB /* NasaProject.xcdatamodeld */; };
 		35D1733C29EE9DEC00350ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D1733B29EE9DEC00350ECB /* Assets.xcassets */; };
 		35D1733F29EE9DEC00350ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D1733D29EE9DEC00350ECB /* LaunchScreen.storyboard */; };
+		35D1734929EEA54800350ECB /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1734829EEA54800350ECB /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		35D1733B29EE9DEC00350ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35D1733E29EE9DEC00350ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35D1734029EE9DEC00350ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35D1734829EEA54800350ECB /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		35D1732E29EE9DEB00350ECB /* NasaProject */ = {
 			isa = PBXGroup;
 			children = (
+				35D1734629EEA4F400350ECB /* Main */,
 				35D1732F29EE9DEB00350ECB /* AppDelegate.swift */,
 				35D1733129EE9DEB00350ECB /* SceneDelegate.swift */,
 				35D1733329EE9DEB00350ECB /* ViewController.swift */,
@@ -68,6 +71,22 @@
 				35D1733829EE9DEB00350ECB /* NasaProject.xcdatamodeld */,
 			);
 			path = NasaProject;
+			sourceTree = "<group>";
+		};
+		35D1734629EEA4F400350ECB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				35D1734729EEA51000350ECB /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		35D1734729EEA51000350ECB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35D1734829EEA54800350ECB /* TabBarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D1734929EEA54800350ECB /* TabBarView.swift in Sources */,
 				35D1733429EE9DEB00350ECB /* ViewController.swift in Sources */,
 				35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */,
 				35D1733A29EE9DEB00350ECB /* NasaProject.xcdatamodeld in Sources */,
