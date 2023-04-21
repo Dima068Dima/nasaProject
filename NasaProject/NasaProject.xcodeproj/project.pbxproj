@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E6B59D7D01747671FDF10A6 /* Pods_NasaProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E41618C0BA58FD7BFF996C /* Pods_NasaProject.framework */; };
+		3535637E29EFDCCB00BE5CC2 /* Needle.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3535637D29EFDCCB00BE5CC2 /* Needle.generated.swift */; };
 		35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1732F29EE9DEB00350ECB /* AppDelegate.swift */; };
 		35D1733229EE9DEB00350ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1733129EE9DEB00350ECB /* SceneDelegate.swift */; };
 		35D1733729EE9DEB00350ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D1733529EE9DEB00350ECB /* Main.storyboard */; };
@@ -18,9 +18,17 @@
 		35D1734D29EEB79F00350ECB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 35D1734C29EEB79F00350ECB /* Podfile */; };
 		35D1735129EEBD6000350ECB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1735029EEBD6000350ECB /* NetworkService.swift */; };
 		35D1735329EEBDC800350ECB /* NetworkServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1735229EEBDC800350ECB /* NetworkServiceImp.swift */; };
+		35D1735729EECAD400350ECB /* PictureDayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1735629EECAD400350ECB /* PictureDayRequest.swift */; };
+		35D1735929EECDEE00350ECB /* RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1735829EECDEE00350ECB /* RootComponent.swift */; };
+		35D1735B29EECFAE00350ECB /* PictureDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1735A29EECFAE00350ECB /* PictureDayView.swift */; };
+		35D1735D29EECFFC00350ECB /* PictureDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1735C29EECFFC00350ECB /* PictureDayViewModel.swift */; };
+		35D1736029EED10900350ECB /* PictureDayLoaderImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1735F29EED10900350ECB /* PictureDayLoaderImp.swift */; };
+		35D1736229EED64400350ECB /* PictureDayComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1736129EED64400350ECB /* PictureDayComponent.swift */; };
+		56317FA3E20D1C324FF9143D /* Pods_NasaProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554168A89E78C2CE34F1CD8B /* Pods_NasaProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3535637D29EFDCCB00BE5CC2 /* Needle.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Needle.generated.swift; sourceTree = "<group>"; };
 		35D1732C29EE9DEB00350ECB /* NasaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D1732F29EE9DEB00350ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D1733129EE9DEB00350ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +41,15 @@
 		35D1734C29EEB79F00350ECB /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		35D1735029EEBD6000350ECB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		35D1735229EEBDC800350ECB /* NetworkServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImp.swift; sourceTree = "<group>"; };
-		364995918AE8EF186E1B9003 /* Pods-NasaProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaProject.release.xcconfig"; path = "Target Support Files/Pods-NasaProject/Pods-NasaProject.release.xcconfig"; sourceTree = "<group>"; };
-		65E41618C0BA58FD7BFF996C /* Pods_NasaProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81B686538C3E4D901623CCBB /* Pods-NasaProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaProject.debug.xcconfig"; path = "Target Support Files/Pods-NasaProject/Pods-NasaProject.debug.xcconfig"; sourceTree = "<group>"; };
+		35D1735629EECAD400350ECB /* PictureDayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDayRequest.swift; sourceTree = "<group>"; };
+		35D1735829EECDEE00350ECB /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
+		35D1735A29EECFAE00350ECB /* PictureDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDayView.swift; sourceTree = "<group>"; };
+		35D1735C29EECFFC00350ECB /* PictureDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDayViewModel.swift; sourceTree = "<group>"; };
+		35D1735F29EED10900350ECB /* PictureDayLoaderImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDayLoaderImp.swift; sourceTree = "<group>"; };
+		35D1736129EED64400350ECB /* PictureDayComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDayComponent.swift; sourceTree = "<group>"; };
+		3AC6717BC0097B9B7833C9B6 /* Pods-NasaProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaProject.debug.xcconfig"; path = "Target Support Files/Pods-NasaProject/Pods-NasaProject.debug.xcconfig"; sourceTree = "<group>"; };
+		554168A89E78C2CE34F1CD8B /* Pods_NasaProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74EA05482DE55CE4265DF17 /* Pods-NasaProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaProject.release.xcconfig"; path = "Target Support Files/Pods-NasaProject/Pods-NasaProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +57,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E6B59D7D01747671FDF10A6 /* Pods_NasaProject.framework in Frameworks */,
+				56317FA3E20D1C324FF9143D /* Pods_NasaProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3535637C29EFDCCB00BE5CC2 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				3535637D29EFDCCB00BE5CC2 /* Needle.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		35D1732329EE9DEB00350ECB = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +79,7 @@
 				35D1732E29EE9DEB00350ECB /* NasaProject */,
 				35D1732D29EE9DEB00350ECB /* Products */,
 				8F91E3F9DF71220EA0667B4B /* Pods */,
-				F0C3456C642E9F8B6C5D05F3 /* Frameworks */,
+				D66478CD56F38C0C0BA726D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,10 +94,12 @@
 		35D1732E29EE9DEB00350ECB /* NasaProject */ = {
 			isa = PBXGroup;
 			children = (
+				35D1735429EEC95400350ECB /* PictureDay */,
 				35D1734E29EEBCCE00350ECB /* Common */,
 				35D1734629EEA4F400350ECB /* Main */,
 				35D1732F29EE9DEB00350ECB /* AppDelegate.swift */,
 				35D1733129EE9DEB00350ECB /* SceneDelegate.swift */,
+				35D1735829EECDEE00350ECB /* RootComponent.swift */,
 				35D1733529EE9DEB00350ECB /* Main.storyboard */,
 				35D1733B29EE9DEC00350ECB /* Assets.xcassets */,
 				35D1733D29EE9DEC00350ECB /* LaunchScreen.storyboard */,
@@ -104,6 +128,7 @@
 		35D1734E29EEBCCE00350ECB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3535637C29EFDCCB00BE5CC2 /* Generated */,
 				35D1734F29EEBD3500350ECB /* Network */,
 			);
 			path = Common;
@@ -118,19 +143,47 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		35D1735429EEC95400350ECB /* PictureDay */ = {
+			isa = PBXGroup;
+			children = (
+				35D1735E29EED0E700350ECB /* Usecases */,
+				35D1735529EEC9A600350ECB /* Networking */,
+				35D1735A29EECFAE00350ECB /* PictureDayView.swift */,
+				35D1735C29EECFFC00350ECB /* PictureDayViewModel.swift */,
+				35D1736129EED64400350ECB /* PictureDayComponent.swift */,
+			);
+			path = PictureDay;
+			sourceTree = "<group>";
+		};
+		35D1735529EEC9A600350ECB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				35D1735629EECAD400350ECB /* PictureDayRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		35D1735E29EED0E700350ECB /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				35D1735F29EED10900350ECB /* PictureDayLoaderImp.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
 		8F91E3F9DF71220EA0667B4B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				81B686538C3E4D901623CCBB /* Pods-NasaProject.debug.xcconfig */,
-				364995918AE8EF186E1B9003 /* Pods-NasaProject.release.xcconfig */,
+				3AC6717BC0097B9B7833C9B6 /* Pods-NasaProject.debug.xcconfig */,
+				B74EA05482DE55CE4265DF17 /* Pods-NasaProject.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F0C3456C642E9F8B6C5D05F3 /* Frameworks */ = {
+		D66478CD56F38C0C0BA726D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65E41618C0BA58FD7BFF996C /* Pods_NasaProject.framework */,
+				554168A89E78C2CE34F1CD8B /* Pods_NasaProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,11 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35D1734329EE9DEC00350ECB /* Build configuration list for PBXNativeTarget "NasaProject" */;
 			buildPhases = (
-				554F77D54FD0CBC9FE7B516E /* [CP] Check Pods Manifest.lock */,
+				0F0D590EF13D01BD6B44E867 /* [CP] Check Pods Manifest.lock */,
 				35D1732829EE9DEB00350ECB /* Sources */,
 				35D1732929EE9DEB00350ECB /* Frameworks */,
 				35D1732A29EE9DEB00350ECB /* Resources */,
-				8ED72000C696B2C2045C26E1 /* [CP] Embed Pods Frameworks */,
+				AA17F3AC8A39D50B49AA7361 /* [CP] Embed Pods Frameworks */,
+				3535637B29EFD9DE00BE5CC2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -205,7 +259,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		554F77D54FD0CBC9FE7B516E /* [CP] Check Pods Manifest.lock */ = {
+		0F0D590EF13D01BD6B44E867 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,7 +281,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8ED72000C696B2C2045C26E1 /* [CP] Embed Pods Frameworks */ = {
+		3535637B29EFD9DE00BE5CC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which needle; then\n    SOURCEKIT_LOGGING=0 && needle generate NasaProject/Common/Generated/Needle.generated.swift NasaProject/\nelse\n  echo \"warning: Needle not installed, download from https://github.com/uber/needle using Homebrew\"\nfi\n";
+		};
+		AA17F3AC8A39D50B49AA7361 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,10 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D1735D29EECFFC00350ECB /* PictureDayViewModel.swift in Sources */,
+				35D1735729EECAD400350ECB /* PictureDayRequest.swift in Sources */,
 				35D1734929EEA54800350ECB /* TabBarView.swift in Sources */,
 				35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */,
 				35D1733A29EE9DEB00350ECB /* NasaProject.xcdatamodeld in Sources */,
+				35D1736029EED10900350ECB /* PictureDayLoaderImp.swift in Sources */,
+				35D1735B29EECFAE00350ECB /* PictureDayView.swift in Sources */,
 				35D1735329EEBDC800350ECB /* NetworkServiceImp.swift in Sources */,
+				35D1735929EECDEE00350ECB /* RootComponent.swift in Sources */,
+				35D1736229EED64400350ECB /* PictureDayComponent.swift in Sources */,
+				3535637E29EFDCCB00BE5CC2 /* Needle.generated.swift in Sources */,
 				35D1735129EEBD6000350ECB /* NetworkService.swift in Sources */,
 				35D1733229EE9DEB00350ECB /* SceneDelegate.swift in Sources */,
 			);
@@ -398,7 +476,7 @@
 		};
 		35D1734429EE9DEC00350ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81B686538C3E4D901623CCBB /* Pods-NasaProject.debug.xcconfig */;
+			baseConfigurationReference = 3AC6717BC0097B9B7833C9B6 /* Pods-NasaProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -431,7 +509,7 @@
 		};
 		35D1734529EE9DEC00350ECB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 364995918AE8EF186E1B9003 /* Pods-NasaProject.release.xcconfig */;
+			baseConfigurationReference = B74EA05482DE55CE4265DF17 /* Pods-NasaProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

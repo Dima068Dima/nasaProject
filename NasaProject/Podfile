@@ -7,6 +7,6 @@ target 'NasaProject' do
 
   # Pods for Tosk
   pod 'Alamofire', '~> 5.5'
-  pod 'NeedleFoundation'
+  pod 'NeedleFoundation' 
 end
 
