@@ -21,10 +21,9 @@ protocol PhotographsEarthRequest {
     func getPhotographsEarth() async throws -> [PhotographsEarth]
 }
 
-struct PhotographsEarth {
+struct PhotographsEarth: Identifiable {
+    var id: String { self.identifier }
     let identifier: String
     let caption: String
     let image: String
 }
-
-
