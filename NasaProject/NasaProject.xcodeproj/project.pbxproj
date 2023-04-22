@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3535637E29EFDCCB00BE5CC2 /* Needle.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3535637D29EFDCCB00BE5CC2 /* Needle.generated.swift */; };
+		3539182C29F3A820000B76DE /* PhotographsEarthLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539182B29F3A820000B76DE /* PhotographsEarthLoader.swift */; };
+		3539182F29F3A904000B76DE /* PhotographsEarthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539182E29F3A903000B76DE /* PhotographsEarthRequest.swift */; };
+		3539183129F3B6C3000B76DE /* PhotographsEarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183029F3B6C3000B76DE /* PhotographsEarthView.swift */; };
+		3539183329F3B6E4000B76DE /* PhotographsEarthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183229F3B6E4000B76DE /* PhotographsEarthViewModel.swift */; };
+		3539183529F3B718000B76DE /* PhotographsEarthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183429F3B718000B76DE /* PhotographsEarthComponent.swift */; };
 		35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1732F29EE9DEB00350ECB /* AppDelegate.swift */; };
 		35D1733229EE9DEB00350ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1733129EE9DEB00350ECB /* SceneDelegate.swift */; };
 		35D1733729EE9DEB00350ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D1733529EE9DEB00350ECB /* Main.storyboard */; };
@@ -29,6 +34,11 @@
 
 /* Begin PBXFileReference section */
 		3535637D29EFDCCB00BE5CC2 /* Needle.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Needle.generated.swift; sourceTree = "<group>"; };
+		3539182B29F3A820000B76DE /* PhotographsEarthLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographsEarthLoader.swift; sourceTree = "<group>"; };
+		3539182E29F3A903000B76DE /* PhotographsEarthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographsEarthRequest.swift; sourceTree = "<group>"; };
+		3539183029F3B6C3000B76DE /* PhotographsEarthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographsEarthView.swift; sourceTree = "<group>"; };
+		3539183229F3B6E4000B76DE /* PhotographsEarthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographsEarthViewModel.swift; sourceTree = "<group>"; };
+		3539183429F3B718000B76DE /* PhotographsEarthComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographsEarthComponent.swift; sourceTree = "<group>"; };
 		35D1732C29EE9DEB00350ECB /* NasaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D1732F29EE9DEB00350ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D1733129EE9DEB00350ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +82,34 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		3539182929F3A79A000B76DE /* UniquePhotographsEarth */ = {
+			isa = PBXGroup;
+			children = (
+				3539182D29F3A8D3000B76DE /* Networking */,
+				3539182A29F3A7E0000B76DE /* Usecases */,
+				3539183029F3B6C3000B76DE /* PhotographsEarthView.swift */,
+				3539183229F3B6E4000B76DE /* PhotographsEarthViewModel.swift */,
+				3539183429F3B718000B76DE /* PhotographsEarthComponent.swift */,
+			);
+			path = UniquePhotographsEarth;
+			sourceTree = "<group>";
+		};
+		3539182A29F3A7E0000B76DE /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				3539182B29F3A820000B76DE /* PhotographsEarthLoader.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		3539182D29F3A8D3000B76DE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3539182E29F3A903000B76DE /* PhotographsEarthRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		35D1732329EE9DEB00350ECB = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +132,7 @@
 		35D1732E29EE9DEB00350ECB /* NasaProject */ = {
 			isa = PBXGroup;
 			children = (
+				3539182929F3A79A000B76DE /* UniquePhotographsEarth */,
 				35D1735429EEC95400350ECB /* PictureDay */,
 				35D1734E29EEBCCE00350ECB /* Common */,
 				35D1734629EEA4F400350ECB /* Main */,
@@ -324,10 +363,14 @@
 			files = (
 				35D1735D29EECFFC00350ECB /* PictureDayViewModel.swift in Sources */,
 				35D1735729EECAD400350ECB /* PictureDayRequest.swift in Sources */,
+				3539183329F3B6E4000B76DE /* PhotographsEarthViewModel.swift in Sources */,
 				35D1734929EEA54800350ECB /* TabBarView.swift in Sources */,
+				3539183529F3B718000B76DE /* PhotographsEarthComponent.swift in Sources */,
+				3539183129F3B6C3000B76DE /* PhotographsEarthView.swift in Sources */,
 				35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */,
 				35D1733A29EE9DEB00350ECB /* NasaProject.xcdatamodeld in Sources */,
 				35D1736029EED10900350ECB /* PictureDayLoaderImp.swift in Sources */,
+				3539182F29F3A904000B76DE /* PhotographsEarthRequest.swift in Sources */,
 				35D1735B29EECFAE00350ECB /* PictureDayView.swift in Sources */,
 				35D1735329EEBDC800350ECB /* NetworkServiceImp.swift in Sources */,
 				35D1735929EECDEE00350ECB /* RootComponent.swift in Sources */,
@@ -335,6 +378,7 @@
 				3535637E29EFDCCB00BE5CC2 /* Needle.generated.swift in Sources */,
 				35D1735129EEBD6000350ECB /* NetworkService.swift in Sources */,
 				35D1733229EE9DEB00350ECB /* SceneDelegate.swift in Sources */,
+				3539182C29F3A820000B76DE /* PhotographsEarthLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
