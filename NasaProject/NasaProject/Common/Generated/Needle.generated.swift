@@ -17,6 +17,19 @@ private func parent1(_ component: NeedleFoundation.Scope) -> NeedleFoundation.Sc
 
 #if !NEEDLE_DYNAMIC
 
+private class PhotographsEarthDependencies487729fc47af8ed8f7c3Provider: PhotographsEarthDependencies {
+    var networkService: NetworkService {
+        return rootComponent.networkService
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->PhotographsEarthComponent
+private func factory09cb463852750b5662ffb3a8f24c1d289f2c0f2e(_ component: NeedleFoundation.Scope) -> AnyObject {
+    return PhotographsEarthDependencies487729fc47af8ed8f7c3Provider(rootComponent: parent1(component) as! RootComponent)
+}
 private class PictureDayDependencies40a494f6b1008ffc5b85Provider: PictureDayDependencies {
     var networkService: NetworkService {
         return rootComponent.networkService
@@ -32,6 +45,11 @@ private func factoryeaf4909f5da943a0e93bb3a8f24c1d289f2c0f2e(_ component: Needle
 }
 
 #else
+extension PhotographsEarthComponent: Registration {
+    public func registerItems() {
+        keyPathToName[\PhotographsEarthDependencies.networkService] = "networkService-NetworkService"
+    }
+}
 extension PictureDayComponent: Registration {
     public func registerItems() {
         keyPathToName[\PictureDayDependencies.networkService] = "networkService-NetworkService"
@@ -59,6 +77,7 @@ private func registerProviderFactory(_ componentPath: String, _ factory: @escapi
 #if !NEEDLE_DYNAMIC
 
 @inline(never) private func register1() {
+    registerProviderFactory("^->RootComponent->PhotographsEarthComponent", factory09cb463852750b5662ffb3a8f24c1d289f2c0f2e)
     registerProviderFactory("^->RootComponent->PictureDayComponent", factoryeaf4909f5da943a0e93bb3a8f24c1d289f2c0f2e)
     registerProviderFactory("^->RootComponent", factoryEmptyDependencyProvider)
 }

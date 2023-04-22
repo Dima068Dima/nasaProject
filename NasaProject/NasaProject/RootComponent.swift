@@ -14,7 +14,7 @@ final class RootComponent: BootstrapComponent {
             let navigationController = UINavigationController(rootViewController: rootViewController)
             navigationController.isNavigationBarHidden = true
             navigationController.isToolbarHidden = true
-            let startingVC = self.pictureDayComponent.pictureDayController
+            let startingVC = self.photographsEarthComponent.photographsEarthController
             navigationController.pushViewController(
                 startingVC , animated: false
             )
@@ -24,4 +24,5 @@ final class RootComponent: BootstrapComponent {
     
     // MARK: Components
     var pictureDayComponent: PictureDayComponent { PictureDayComponent(parent: self) }
+    var photographsEarthComponent: PhotographsEarthComponent { PhotographsEarthComponent(parent: self) }
 }
