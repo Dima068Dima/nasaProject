@@ -14,6 +14,7 @@
 		3539183329F3B6E4000B76DE /* PhotographsEarthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183229F3B6E4000B76DE /* PhotographsEarthViewModel.swift */; };
 		3539183529F3B718000B76DE /* PhotographsEarthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183429F3B718000B76DE /* PhotographsEarthComponent.swift */; };
 		3539183729F51778000B76DE /* TabBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183629F51778000B76DE /* TabBarComponent.swift */; };
+		3539183A29F68C49000B76DE /* AlertMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183929F68C49000B76DE /* AlertMessenger.swift */; };
 		35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1732F29EE9DEB00350ECB /* AppDelegate.swift */; };
 		35D1733229EE9DEB00350ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1733129EE9DEB00350ECB /* SceneDelegate.swift */; };
 		35D1733729EE9DEB00350ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D1733529EE9DEB00350ECB /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		3539183229F3B6E4000B76DE /* PhotographsEarthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographsEarthViewModel.swift; sourceTree = "<group>"; };
 		3539183429F3B718000B76DE /* PhotographsEarthComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographsEarthComponent.swift; sourceTree = "<group>"; };
 		3539183629F51778000B76DE /* TabBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarComponent.swift; sourceTree = "<group>"; };
+		3539183929F68C49000B76DE /* AlertMessenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessenger.swift; sourceTree = "<group>"; };
 		35D1732C29EE9DEB00350ECB /* NasaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D1732F29EE9DEB00350ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D1733129EE9DEB00350ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		3539183829F68C13000B76DE /* AlertMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				3539183929F68C49000B76DE /* AlertMessenger.swift */,
+			);
+			path = AlertMessenger;
+			sourceTree = "<group>";
+		};
 		35D1732329EE9DEB00350ECB = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +180,7 @@
 		35D1734E29EEBCCE00350ECB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3539183829F68C13000B76DE /* AlertMessenger */,
 				3535637C29EFDCCB00BE5CC2 /* Generated */,
 				35D1734F29EEBD3500350ECB /* Network */,
 			);
@@ -372,6 +383,7 @@
 				3539183129F3B6C3000B76DE /* PhotographsEarthView.swift in Sources */,
 				3539183729F51778000B76DE /* TabBarComponent.swift in Sources */,
 				35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */,
+				3539183A29F68C49000B76DE /* AlertMessenger.swift in Sources */,
 				35D1733A29EE9DEB00350ECB /* NasaProject.xcdatamodeld in Sources */,
 				35D1736029EED10900350ECB /* PictureDayLoaderImp.swift in Sources */,
 				3539182F29F3A904000B76DE /* PhotographsEarthRequest.swift in Sources */,

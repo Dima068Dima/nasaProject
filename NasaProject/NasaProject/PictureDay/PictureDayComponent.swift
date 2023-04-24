@@ -5,6 +5,7 @@ import SwiftUI
 
 protocol PictureDayDependencies: Dependency {
     var networkService: NetworkService { get }
+    var alertMessenger: AlertMessenger { get }
 }
 
 class PictureDayComponent: Component<PictureDayDependencies> {
@@ -15,7 +16,10 @@ class PictureDayComponent: Component<PictureDayDependencies> {
     }
     
     private var viewModel: PictureDayViewModel {
-        return PictureDayViewModel(pictureDayLoader: pictureDayLoader)
+        return PictureDayViewModel(
+            pictureDayLoader: pictureDayLoader,
+            alertMessenger: dependency.alertMessenger
+        )
     }
     
     private var pictureDayLoader: PictureDayLoader {

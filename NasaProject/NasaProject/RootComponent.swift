@@ -22,8 +22,12 @@ final class RootComponent: BootstrapComponent {
         }
     }
     
+    var alertMessenger: AlertMessenger {
+        shared { AlertMessengerImp() }
+    }
+    
     // MARK: Components
-    var pictureDayComponent: PictureDayComponent { PictureDayComponent(parent: self) }
+//    var pictureDayComponent: PictureDayComponent { PictureDayComponent(parent: self) }
 //    var photographsEarthComponent: PhotographsEarthComponent { PhotographsEarthComponent(parent: self) }
     var tabBarComponent: TabBarComponent { TabBarComponent(parent: self)
     }

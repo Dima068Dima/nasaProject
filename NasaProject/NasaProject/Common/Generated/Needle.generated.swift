@@ -17,22 +17,12 @@ private func parent1(_ component: NeedleFoundation.Scope) -> NeedleFoundation.Sc
 
 #if !NEEDLE_DYNAMIC
 
-private class PictureDayDependencies40a494f6b1008ffc5b85Provider: PictureDayDependencies {
-    var networkService: NetworkService {
-        return rootComponent.networkService
-    }
-    private let rootComponent: RootComponent
-    init(rootComponent: RootComponent) {
-        self.rootComponent = rootComponent
-    }
-}
-/// ^->RootComponent->PictureDayComponent
-private func factoryeaf4909f5da943a0e93bb3a8f24c1d289f2c0f2e(_ component: NeedleFoundation.Scope) -> AnyObject {
-    return PictureDayDependencies40a494f6b1008ffc5b85Provider(rootComponent: parent1(component) as! RootComponent)
-}
 private class TabBarDependencies8fc83c57bebb8079d10cProvider: TabBarDependencies {
     var networkService: NetworkService {
         return rootComponent.networkService
+    }
+    var alertMessenger: AlertMessenger {
+        return rootComponent.alertMessenger
     }
     private let rootComponent: RootComponent
     init(rootComponent: RootComponent) {
@@ -45,11 +35,6 @@ private func factory624c8ccb2057f7c04db7b3a8f24c1d289f2c0f2e(_ component: Needle
 }
 
 #else
-extension PictureDayComponent: Registration {
-    public func registerItems() {
-        keyPathToName[\PictureDayDependencies.networkService] = "networkService-NetworkService"
-    }
-}
 extension RootComponent: Registration {
     public func registerItems() {
 
@@ -59,6 +44,7 @@ extension RootComponent: Registration {
 extension TabBarComponent: Registration {
     public func registerItems() {
         keyPathToName[\TabBarDependencies.networkService] = "networkService-NetworkService"
+        keyPathToName[\TabBarDependencies.alertMessenger] = "alertMessenger-AlertMessenger"
     }
 }
 
@@ -77,7 +63,6 @@ private func registerProviderFactory(_ componentPath: String, _ factory: @escapi
 #if !NEEDLE_DYNAMIC
 
 @inline(never) private func register1() {
-    registerProviderFactory("^->RootComponent->PictureDayComponent", factoryeaf4909f5da943a0e93bb3a8f24c1d289f2c0f2e)
     registerProviderFactory("^->RootComponent", factoryEmptyDependencyProvider)
     registerProviderFactory("^->RootComponent->TabBarComponent", factory624c8ccb2057f7c04db7b3a8f24c1d289f2c0f2e)
 }
