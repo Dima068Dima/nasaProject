@@ -2,10 +2,11 @@ import SwiftUI
 
 struct TabBarView: View {
     @State var selectedTab: Int = 2
-    
+    @ObservedObject var viewModel: PhotographsEarthViewModel
     var body: some View {
         TabView(selection: $selectedTab) {
-            HomeView()
+            
+            PhotographsEarthView(viewModel: viewModel)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
@@ -28,21 +29,8 @@ struct TabBarView: View {
     }
 }
 
-struct TabBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBarView()
-    }
-}
-
-struct HomeView: View {
-    var body: some View {
-                    NavigationView {
-//                        Color.red.ignoresSafeArea()
-                        Text("Home Tab")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                    }
-                    .navigationTitle("All")
-                    .navigationBarTitleDisplayMode(.automatic)
-    }
-}
+//struct TabBarView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TabBarView(viewMode)
+//    }
+//}
