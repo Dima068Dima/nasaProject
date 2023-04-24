@@ -22,12 +22,12 @@ class PictureDayViewModel: ObservableObject {
                 let model = try await pictureDayLoader.execute()
                 pictureDayModel = model
             } catch {
-                await MainActor.run{
-                    alertMessenger.presentAlert(
-                        title: "Ошибка",
-                        message: "Не удалось загрузить данные, попробуйте позже"
-                    )
-                }
+//                await MainActor.run {
+//                    alertMessenger.presentAlert(
+//                        title: "Ошибка",
+//                        message: "Не удалось загрузить данные, попробуйте позже"
+//                    )
+//                }
             }
         }
     }

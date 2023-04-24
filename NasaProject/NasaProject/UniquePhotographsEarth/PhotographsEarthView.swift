@@ -27,7 +27,6 @@ struct PhotographsEarthView: View {
                                             .aspectRatio(contentMode: .fill)
                                             .layoutPriority(-1)
                                             .cornerRadius(25)
-                                        //                                        .frame(width: 300, height: 150)
                                     },
                                     placeholder: {
                                         ProgressView()
