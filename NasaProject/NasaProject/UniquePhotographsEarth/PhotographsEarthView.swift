@@ -9,7 +9,7 @@ struct PhotographsEarthView: View {
     }
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             ScrollView {
                 VStack {
                     ForEach(viewModel.photographsEarthModel) { index in

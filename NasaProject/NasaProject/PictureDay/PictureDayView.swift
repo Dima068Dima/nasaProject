@@ -10,7 +10,32 @@ struct PictureDayView: View {
         viewModel.loadData()
     }
     var body: some View {
-        Text(viewModel.pictureDayModel?.day ?? "")
+        NavigationView {
+            VStack {
+                Text(viewModel.pictureDayModel?.day ?? "")
+                if #available(iOS 15.0, *) {
+                    AsyncImage(
+                        url: URL(string: viewModel.pictureDayModel?.url ?? ""),
+                        content: { image in
+                            image.resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .layoutPriority(-1)
+                                .cornerRadius(25)
+                                
+                            //                                        .frame(width: 300, height: 150)
+                        },
+                        placeholder: {
+                            ProgressView()
+                        }
+                    )
+                } else {
+                    // Fallback on earlier versions
+                }
+                Text(viewModel.pictureDayModel?.title ?? "")
+            }
+        }
+        .navigationTitle("Photo of the day")
+        .navigationBarTitleDisplayMode(.automatic)
     }
 }
 

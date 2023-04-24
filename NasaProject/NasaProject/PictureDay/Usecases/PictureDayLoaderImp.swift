@@ -24,4 +24,7 @@ protocol PictureDayRequest {
 
 struct PictureDayModel {
     let day: String
+    let title: String
+    let image: String
+    let url: String
 }

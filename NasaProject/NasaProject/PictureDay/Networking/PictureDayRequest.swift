@@ -20,10 +20,11 @@ class PictureDayRequestImp: PictureDayRequest {
 }
 
 struct PictureRequest: Codable {
-    let date: String //, explanation: String
-//        let hdurl: String
+    let date: String
+    let explanation: String
+    let hdurl: String
 //        let mediaType, serviceVersion, title: String
-//        let url: String
+        let url: String
 //
 //        enum CodingKeys: String, CodingKey {
 //            case date, explanation, hdurl
@@ -35,6 +36,11 @@ struct PictureRequest: Codable {
 
 extension PictureRequest {
     func toPictureDayModel() -> PictureDayModel {
-        return PictureDayModel(day: self.date)
+        return PictureDayModel(
+            day: self.date,
+            title: self.explanation,
+            image: self.hdurl,
+            url: self.url
+        )
     }
 }

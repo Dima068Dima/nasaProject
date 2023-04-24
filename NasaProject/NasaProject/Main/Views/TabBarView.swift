@@ -3,16 +3,17 @@ import SwiftUI
 struct TabBarView: View {
     @State var selectedTab: Int = 2
     @ObservedObject var viewModel: PhotographsEarthViewModel
+    @ObservedObject var pictureDayViewModel: PictureDayViewModel
+    
     var body: some View {
         TabView(selection: $selectedTab) {
-            
             PhotographsEarthView(viewModel: viewModel)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
                 .tag(0)
-            Text("Browse Tab")
+            PictureDayView(viewModel: pictureDayViewModel)
                 .tabItem {
                     Image(systemName: "globe")
                     Text("Browse")
