@@ -13,7 +13,6 @@ struct PictureDayView: View {
             ScrollView {
                 VStack {
                     Text(viewModel.pictureDayModel?.day ?? "")
-                        .padding(.leading)
                     Spacer()
                     if #available(iOS 15.0, *) {
                         AsyncImage(

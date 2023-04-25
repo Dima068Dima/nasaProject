@@ -2,7 +2,7 @@ import Foundation
 
 class PictureDayRequestImp: PictureDayRequest {
     private let networkService: NetworkService
-    private let url = "https://api.nasa.gov/planetary/apod?api_key=kXvKqoVXHNxFLmKZmDGEysyrtr3MOhQphMmLJzAz"
+    private let url = "https://api.nasa.gov/planetary/apod?api_key=JLcg1Oly6SH0ll09eizVQDIVeLdgmmgcduguyceE"
     
     init(networkService: NetworkService) {
         self.networkService = networkService

@@ -2,7 +2,7 @@ import Foundation
 
 class PhotographsEarthRequestImp: PhotographsEarthRequest {
     private let networkService: NetworkService
-    private let url = "https://api.nasa.gov/EPIC/api/natural/date/2019-05-30?api_key=kXvKqoVXHNxFLmKZmDGEysyrtr3MOhQphMmLJzAz"
+    private let url = "https://api.nasa.gov/EPIC/api/natural/date/2019-05-30?api_key=JLcg1Oly6SH0ll09eizVQDIVeLdgmmgcduguyceE"
     
     init(networkService: NetworkService) {
         self.networkService = networkService

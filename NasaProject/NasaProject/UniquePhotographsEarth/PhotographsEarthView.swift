@@ -13,33 +13,24 @@ struct PhotographsEarthView: View {
             ScrollView {
                 VStack {
                     ForEach(viewModel.photographsEarthModel) { index in
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 25.0)
-                                .fill(Color.white)
-                                .frame(width: 300, height: 150)
-                                .shadow(radius: 10)
-                                .padding()
                             if #available(iOS 15.0, *) {
+                                let imageUrl = "https://epic.gsfc.nasa.gov/archive/natural/2019/05/30/jpg/"
                                 AsyncImage(
-                                    url: URL(string: "\(index.image)"),
+                                    url: URL(string: "\(imageUrl)\(index.image).jpg"),
                                     content: { image in
                                         image.resizable()
                                             .aspectRatio(contentMode: .fill)
                                             .layoutPriority(-1)
                                             .cornerRadius(25)
+                                            .padding(.horizontal)
                                     },
                                     placeholder: {
-                                        ProgressView()
+                                        
                                     }
                                 )
                             } else {
                                 // Fallback on earlier versions
                             }
-                            
-                        }
-                        .clipped()
-                        .aspectRatio(1, contentMode: .fit)
-                        
                     }
                 }
             }
