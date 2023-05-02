@@ -18,6 +18,9 @@
 		3539183D29F6BA6F000B76DE /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183C29F6BA6F000B76DE /* DateFormatter.swift */; };
 		354D0F032A014663002AF432 /* MarsRoverPhotosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D0F022A014663002AF432 /* MarsRoverPhotosRequest.swift */; };
 		354D0F062A014950002AF432 /* MarsRoverPhotosLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D0F052A014950002AF432 /* MarsRoverPhotosLoader.swift */; };
+		354D0F082A015D11002AF432 /* MarsRoverPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D0F072A015D11002AF432 /* MarsRoverPhotosView.swift */; };
+		354D0F0A2A015D36002AF432 /* MarsRoverPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D0F092A015D36002AF432 /* MarsRoverPhotosViewModel.swift */; };
+		354D0F0C2A015D56002AF432 /* MarsRoverPhotosComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D0F0B2A015D56002AF432 /* MarsRoverPhotosComponent.swift */; };
 		35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1732F29EE9DEB00350ECB /* AppDelegate.swift */; };
 		35D1733229EE9DEB00350ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1733129EE9DEB00350ECB /* SceneDelegate.swift */; };
 		35D1733729EE9DEB00350ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D1733529EE9DEB00350ECB /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 		3539183C29F6BA6F000B76DE /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		354D0F022A014663002AF432 /* MarsRoverPhotosRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosRequest.swift; sourceTree = "<group>"; };
 		354D0F052A014950002AF432 /* MarsRoverPhotosLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosLoader.swift; sourceTree = "<group>"; };
+		354D0F072A015D11002AF432 /* MarsRoverPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosView.swift; sourceTree = "<group>"; };
+		354D0F092A015D36002AF432 /* MarsRoverPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosViewModel.swift; sourceTree = "<group>"; };
+		354D0F0B2A015D56002AF432 /* MarsRoverPhotosComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosComponent.swift; sourceTree = "<group>"; };
 		35D1732C29EE9DEB00350ECB /* NasaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D1732F29EE9DEB00350ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D1733129EE9DEB00350ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +147,9 @@
 			children = (
 				354D0F042A01492A002AF432 /* Usecases */,
 				354D0F012A014631002AF432 /* Networking */,
+				354D0F072A015D11002AF432 /* MarsRoverPhotosView.swift */,
+				354D0F092A015D36002AF432 /* MarsRoverPhotosViewModel.swift */,
+				354D0F0B2A015D56002AF432 /* MarsRoverPhotosComponent.swift */,
 			);
 			path = MarsRoverPhotos;
 			sourceTree = "<group>";
@@ -421,6 +430,7 @@
 				3539183329F3B6E4000B76DE /* PhotographsEarthViewModel.swift in Sources */,
 				3539183D29F6BA6F000B76DE /* DateFormatter.swift in Sources */,
 				35D1734929EEA54800350ECB /* TabBarView.swift in Sources */,
+				354D0F082A015D11002AF432 /* MarsRoverPhotosView.swift in Sources */,
 				3539183529F3B718000B76DE /* PhotographsEarthComponent.swift in Sources */,
 				3539183129F3B6C3000B76DE /* PhotographsEarthView.swift in Sources */,
 				3539183729F51778000B76DE /* TabBarComponent.swift in Sources */,
@@ -436,8 +446,10 @@
 				354D0F032A014663002AF432 /* MarsRoverPhotosRequest.swift in Sources */,
 				35D1736229EED64400350ECB /* PictureDayComponent.swift in Sources */,
 				3535637E29EFDCCB00BE5CC2 /* Needle.generated.swift in Sources */,
+				354D0F0A2A015D36002AF432 /* MarsRoverPhotosViewModel.swift in Sources */,
 				35D1735129EEBD6000350ECB /* NetworkService.swift in Sources */,
 				35D1733229EE9DEB00350ECB /* SceneDelegate.swift in Sources */,
+				354D0F0C2A015D56002AF432 /* MarsRoverPhotosComponent.swift in Sources */,
 				3539182C29F3A820000B76DE /* PhotographsEarthLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

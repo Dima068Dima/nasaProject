@@ -4,6 +4,7 @@ struct TabBarView: View {
     @State var selectedTab: Int = 2
     @ObservedObject var viewModel: PhotographsEarthViewModel
     @ObservedObject var pictureDayViewModel: PictureDayViewModel
+    @ObservedObject var marsRoverPhotosViewModel: MarsRoverPhotosViewModel
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -19,7 +20,7 @@ struct TabBarView: View {
                     Text("Browse")
                 }
                 .tag(1)
-            Text("Profile Tab")
+            MarsRoverPhotosView(viewModel: marsRoverPhotosViewModel)
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("Profile")
