@@ -16,6 +16,8 @@
 		3539183729F51778000B76DE /* TabBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183629F51778000B76DE /* TabBarComponent.swift */; };
 		3539183A29F68C49000B76DE /* AlertMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183929F68C49000B76DE /* AlertMessenger.swift */; };
 		3539183D29F6BA6F000B76DE /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3539183C29F6BA6F000B76DE /* DateFormatter.swift */; };
+		354D0F032A014663002AF432 /* MarsRoverPhotosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D0F022A014663002AF432 /* MarsRoverPhotosRequest.swift */; };
+		354D0F062A014950002AF432 /* MarsRoverPhotosLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D0F052A014950002AF432 /* MarsRoverPhotosLoader.swift */; };
 		35D1733029EE9DEB00350ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1732F29EE9DEB00350ECB /* AppDelegate.swift */; };
 		35D1733229EE9DEB00350ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1733129EE9DEB00350ECB /* SceneDelegate.swift */; };
 		35D1733729EE9DEB00350ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D1733529EE9DEB00350ECB /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		3539183629F51778000B76DE /* TabBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarComponent.swift; sourceTree = "<group>"; };
 		3539183929F68C49000B76DE /* AlertMessenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessenger.swift; sourceTree = "<group>"; };
 		3539183C29F6BA6F000B76DE /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		354D0F022A014663002AF432 /* MarsRoverPhotosRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosRequest.swift; sourceTree = "<group>"; };
+		354D0F052A014950002AF432 /* MarsRoverPhotosLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosLoader.swift; sourceTree = "<group>"; };
 		35D1732C29EE9DEB00350ECB /* NasaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D1732F29EE9DEB00350ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D1733129EE9DEB00350ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		354D0F002A0145F5002AF432 /* MarsRoverPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				354D0F042A01492A002AF432 /* Usecases */,
+				354D0F012A014631002AF432 /* Networking */,
+			);
+			path = MarsRoverPhotos;
+			sourceTree = "<group>";
+		};
+		354D0F012A014631002AF432 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				354D0F022A014663002AF432 /* MarsRoverPhotosRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		354D0F042A01492A002AF432 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				354D0F052A014950002AF432 /* MarsRoverPhotosLoader.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
 		35D1732329EE9DEB00350ECB = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +183,7 @@
 		35D1732E29EE9DEB00350ECB /* NasaProject */ = {
 			isa = PBXGroup;
 			children = (
+				354D0F002A0145F5002AF432 /* MarsRoverPhotos */,
 				3539182929F3A79A000B76DE /* UniquePhotographsEarth */,
 				35D1735429EEC95400350ECB /* PictureDay */,
 				35D1734E29EEBCCE00350ECB /* Common */,
@@ -400,8 +430,10 @@
 				35D1736029EED10900350ECB /* PictureDayLoaderImp.swift in Sources */,
 				3539182F29F3A904000B76DE /* PhotographsEarthRequest.swift in Sources */,
 				35D1735B29EECFAE00350ECB /* PictureDayView.swift in Sources */,
+				354D0F062A014950002AF432 /* MarsRoverPhotosLoader.swift in Sources */,
 				35D1735329EEBDC800350ECB /* NetworkServiceImp.swift in Sources */,
 				35D1735929EECDEE00350ECB /* RootComponent.swift in Sources */,
+				354D0F032A014663002AF432 /* MarsRoverPhotosRequest.swift in Sources */,
 				35D1736229EED64400350ECB /* PictureDayComponent.swift in Sources */,
 				3535637E29EFDCCB00BE5CC2 /* Needle.generated.swift in Sources */,
 				35D1735129EEBD6000350ECB /* NetworkService.swift in Sources */,
