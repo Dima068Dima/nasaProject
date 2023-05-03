@@ -7,17 +7,128 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5D6948BC-76BD-48DF-8481-4D8E8666AE61"
+            uuid = "9327626A-2006-405A-B898-6FFE1BA758D9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NasaProject/MarsRoverPhotos/Networking/MarsRoverPhotosRequest.swift"
+            filePath = "NasaProject/PhotoSelectOfMarsByDate/Networking/PhotoSelectOfMarsByDateRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getMarsRoverPhotos(selectedDate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68429A7D-9775-4659-ADFA-BEAE7B0BBD1D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NasaProject/PhotoSelectOfMarsByDate/PhotoSelectMarsDateViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "loadData(selectedDate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99C60DED-5422-412A-80E3-7F2157C00D7F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NasaProject/PhotoSelectOfMarsByDate/PhotoSelectMarsDateViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "getMarsRoverPhotos()"
+            landmarkName = "loadData(selectedDate:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "99C60DED-5422-412A-80E3-7F2157C00D7F - 23c9129464aab41c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NasaProject.PhotoSelectMarsDateViewModel.loadData(selectedDate: Swift.String) -&gt; ()"
+                  moduleName = "NasaProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrijtatarincev/nasaProject/NasaProject/NasaProject/PhotoSelectOfMarsByDate/PhotoSelectMarsDateViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "87">
+               </Location>
+               <Location
+                  uuid = "99C60DED-5422-412A-80E3-7F2157C00D7F - 53cae3f2659492dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in NasaProject.PhotoSelectMarsDateViewModel.loadData(selectedDate: Swift.String) -&gt; ()"
+                  moduleName = "NasaProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrijtatarincev/nasaProject/NasaProject/NasaProject/PhotoSelectOfMarsByDate/PhotoSelectMarsDateViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  uuid = "99C60DED-5422-412A-80E3-7F2157C00D7F - 51e58f8a80d436ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NasaProject.PhotoSelectMarsDateViewModel.loadData(selectedDate: Swift.String) -&gt; ()"
+                  moduleName = "NasaProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrijtatarincev/nasaProject/NasaProject/NasaProject/PhotoSelectOfMarsByDate/PhotoSelectMarsDateViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "63">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88B8DFF2-942D-480F-B3F6-09A123676EFE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NasaProject/MarsRoverPhotos/MarsRoverPhotosView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E4E74A0-2E99-4458-8B45-B954E585EA2D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NasaProject/PhotoSelectOfMarsByDate/PhotoSelectOfMarsByDateView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -18,6 +18,18 @@ struct PhotoSelectOfMarsByDateView: View {
                 .datePickerStyle(CompactDatePickerStyle())
                 .font(.title)
                 .padding(.horizontal, 30)
+            Button {
+                viewModel.loadData(selectedDate: dateFormatter.string(from: selectedDate))
+            } label: {
+                Text("Get a photo")
+                    .padding(.horizontal, 50)
+                    .padding(.vertical, 18)
+                    .background(Color.blue)
+                    .cornerRadius(3)
+                    .foregroundColor(.black)
+                    .font(.title)
+            }
+
         }
         .onAppear {
             viewModel.loadData(selectedDate: dateFormatter.string(from: selectedDate))

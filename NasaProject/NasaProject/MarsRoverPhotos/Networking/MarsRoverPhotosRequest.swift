@@ -19,7 +19,11 @@ class MarsRoverPhotosRequestImp: MarsRoverPhotosRequest {
     }
 }
 
-typealias MarsRoverPhotosModel = [MarsPhotosModel]
+typealias MarsRoverPhotosModel = PhotoModel
+
+struct PhotoModel: Codable {
+    let photos: [MarsPhotosModel]
+}
 
 struct MarsPhotosModel: Codable {
     let id: Int
@@ -58,11 +62,26 @@ struct RoverModel: Codable {
     }
 }
 
-extension MarsRoverPhotosModel {
+//extension MarsRoverPhotosModel {
+//    func toMarsPhotos() -> [MarsPhotos] {
+//        let model = self.map { data in
+//            MarsPhotos(
+//                id: Int(data.id),
+//                camera: data.camera.toCamera(),
+//                imgSrc: data.imgSrc,
+//                earthDate: data.earthDate,
+//                rover: data.rover.toRover()
+//            )
+//        }
+//        return model
+//    }
+//}
+
+extension PhotoModel {
     func toMarsPhotos() -> [MarsPhotos] {
-        let model = self.map { data in
+        let model = self.photos.map { data in
             MarsPhotos(
-                id: Int(data.id),
+                id: data.id,
                 camera: data.camera.toCamera(),
                 imgSrc: data.imgSrc,
                 earthDate: data.earthDate,

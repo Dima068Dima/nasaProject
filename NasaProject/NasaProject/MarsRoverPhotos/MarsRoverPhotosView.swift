@@ -28,7 +28,7 @@ struct MarsRoverPhotosView: View {
                     }
                 }
             }
-            .navigationTitle("MarsRoverPhotos")
+            .navigationTitle("Mars Rover Photos")
             .navigationBarTitleDisplayMode(.automatic)
         }
         .onAppear {
