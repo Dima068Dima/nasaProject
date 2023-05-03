@@ -12,7 +12,8 @@ class TabBarComponent: Component<TabBarDependencies> {
         let swiftUIView = TabBarView(
             viewModel: viewModel,
             pictureDayViewModel: pictureDayViewModel,
-            marsRoverPhotosViewModel: marsRoverPhotosViewModel
+            marsRoverPhotosViewModel: marsRoverPhotosViewModel,
+            photoSelectMarsDateViewModel: photoSelectMarsDateViewModel
         )
         let controller = UIHostingController(rootView: swiftUIView)
         return controller
@@ -60,6 +61,24 @@ class TabBarComponent: Component<TabBarDependencies> {
     
     private var marsRoverPhotosRequest: MarsRoverPhotosRequest {
         return MarsRoverPhotosRequestImp(
+            networkService: dependency.networkService
+        )
+    }
+    
+    private var photoSelectMarsDateViewModel: PhotoSelectMarsDateViewModel {
+        return PhotoSelectMarsDateViewModel(
+            photoSelectMarsDateLoader: photoSelectMarsDateLoader
+        )
+    }
+    
+    private var photoSelectMarsDateLoader: PhotoSelectMarsDateLoader {
+        return PhotoSelectMarsDateLoaderImp(
+            photoSelectMarsDateRequest: photoSelectMarsDateRequest
+        )
+    }
+    
+    private var photoSelectMarsDateRequest: PhotoSelectMarsDateRequest {
+        return PhotoSelectOfMarsByDateRequest(
             networkService: dependency.networkService
         )
     }

@@ -5,6 +5,7 @@ struct TabBarView: View {
     @ObservedObject var viewModel: PhotographsEarthViewModel
     @ObservedObject var pictureDayViewModel: PictureDayViewModel
     @ObservedObject var marsRoverPhotosViewModel: MarsRoverPhotosViewModel
+    @ObservedObject var photoSelectMarsDateViewModel: PhotoSelectMarsDateViewModel
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -26,6 +27,12 @@ struct TabBarView: View {
                     Text("Profile")
                 }
                 .tag(2)
+            PhotoSelectOfMarsByDateView(viewModel: photoSelectMarsDateViewModel)
+                .tabItem {
+                    Image(systemName: "globe")
+                    Text("Photo Mars")
+                }
+                .tag(3)
         }
         .accentColor(.red)
     }
