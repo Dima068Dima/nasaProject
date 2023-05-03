@@ -31,7 +31,9 @@ struct MarsRoverPhotosView: View {
             .navigationTitle("MarsRoverPhotos")
             .navigationBarTitleDisplayMode(.automatic)
         }
-
+        .onAppear {
+            viewModel.loadData()
+        }
     }
 }
 
